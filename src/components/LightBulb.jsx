@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import Image from "next/image";
 
 const LightBulb = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -35,11 +36,12 @@ const LightBulb = () => {
         isSticky ? "bottom-24" : "bottom-4"
       }`}
     >
-      <img
+      <Image
         src={lightBulb.src}
         alt="bulb"
         className="w-full h-auto md:hidden"
         loading="eager"
+        priority
       />
     </motion.div>
   );

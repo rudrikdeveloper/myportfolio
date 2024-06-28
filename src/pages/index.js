@@ -62,7 +62,7 @@ export default function Home() {
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                   {...scaleMotion}
                 >
-                  Let's Connect
+                  Let&apos;s Connect
                 </MotionLink>
               </div>
             </div>
