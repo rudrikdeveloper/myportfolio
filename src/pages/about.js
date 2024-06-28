@@ -19,12 +19,12 @@ const AnimatedNumbers = ({ target }) => {
     const animation = animate(count, target, { duration: 2 });
 
     return animation.stop;
-  }, [target]);
+  }, [count, target]);
 
   return <motion.span>{rounded}</motion.span>;
 };
 
-const about = () => {
+const About = () => {
   return (
     <>
       <Head>
@@ -41,23 +41,23 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium text-justify">
-                Hi, I'm Rudrik Raina, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user centered
-                digital experiences. With some years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                Hi, I&apos;m Rudrik Raina, a web developer and UI/UX designer
+                with a passion for creating beautiful, functional, and
+                user-centered digital experiences. With some years of experience
+                in the field, I am always looking for new and innovative ways to
+                bring my clients&apos; visions to life.
               </p>
               <p className="my-4 font-medium text-justify">
                 I believe that design is about more than just making things look
-                pretty. It's about solving problems and creating intuitive,
+                pretty. It&apos;s about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
               <p className="font-medium text-justify">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and user
-                centered thinking to every project I work on. I look forward to
-                the opportunity to bring my skills and passion to your next
-                project.
+                Whether I&apos;m working on a website, mobile app, or other
+                digital product, I bring my commitment to design excellence and
+                user-centered thinking to every project I work on. I look
+                forward to the opportunity to bring my skills and passion to
+                your next project.
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl bg-light p-4 xs:p-4 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
@@ -99,4 +99,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
