@@ -22,6 +22,8 @@ const ContactPage = () => {
               <Image
                 src={designPic}
                 alt="Design"
+                width={500}
+                height={500}
                 className="w-full h-auto"
                 loading="eager"
                 priority

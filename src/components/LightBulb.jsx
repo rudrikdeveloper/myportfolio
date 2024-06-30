@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
@@ -37,9 +36,11 @@ const LightBulb = () => {
       }`}
     >
       <Image
-        src={lightBulb.src}
+        src={lightBulb}
         alt="bulb"
         className="w-full h-auto md:hidden"
+        width={24}
+        height={24}
         loading="eager"
         priority
       />
