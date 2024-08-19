@@ -48,16 +48,22 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor Of engineering In mechanical"
-            time="2014-2018"
-            place="IES College Of Technology, RGPV, BHOPAL"
-            info="Relevant courses included Thermodynamics, Fluid Mechanics, Heat and Mass Transfer, Mechanics of Materials, Machine Design, Manufacturing Processes, and Engineering Materials."
+            type="Post Graduate Diploma in Management"
+            time="2024-2026"
+            place="Jaipuria School of Business, Ghaziabad"
+            info="The program focuses on developing managerial skills, leadership qualities, and strategic thinking through a blend of academic learning and practical exposure. Courses cover areas such as finance, marketing, operations, and human resources."
           />
           <Details
             type="master of technology in nanoTechnology"
             time="2018-2020"
             place="School Of nanotechnology, UTD, RGPV, BHOPAL"
             info="Relevant courses included Nanomaterials, Nanoelectronics, Nanophotonics, Nanoscale Characterization Techniques, Nanofabrication, Quantum Mechanics, and Nanobiotechnology."
+          />
+          <Details
+            type="Bachelor Of engineering In mechanical"
+            time="2014-2018"
+            place="IES College Of Technology, RGPV, BHOPAL"
+            info="Relevant courses included Thermodynamics, Fluid Mechanics, Heat and Mass Transfer, Mechanics of Materials, Machine Design, Manufacturing Processes, and Engineering Materials."
           />
         </ul>
       </div>
