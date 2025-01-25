@@ -55,12 +55,20 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Customer Service Associate"
+            position="Customer Service Associate - L2"
             company="Magnum"
-            time="17-Jun-2021 - 17-Jan-2022"
+            time="Jun-2021 - Jan-2022"
             address="Bhopal, India"
             companyLink="https://www.magnumgroup.co.in/"
             work="Responsibilities included handling inbound and outbound customer calls, resolving customer queries and complaints, providing information about products and services, maintaining customer records, achieving call center targets, and ensuring high levels of customer satisfaction."
+          />
+          <Details
+            position="Voice Process Associate - L1"
+            company="eNoah"
+            time="Jun-2020 - April-2021"
+            address="Indore, India"
+            companyLink="https://enoahisolution.com/"
+            work="Responsibilities involved managing a high volume of outbound and inbound calls to hospitals across multiple U.S. time zones, supporting insurance companies in obtaining medical documentation, negotiating costs effectively, and ensuring smooth payment processing. Addressed concerns related to medical records and physician statements while adhering to HIPAA guidelines. Consistently met performance objectives and upheld strong customer service standards."
           />
         </ul>
       </div>
