@@ -26,7 +26,7 @@ export default function Home() {
         <title>Rudrik Raina - Portfolio</title>
         <meta
           name="description"
-          content="Welcome to the portfolio of Rudrik Raina, a web developer and UI/UX designer turning vision into reality with code and design."
+          content="Welcome to the portfolio of Rudrik Raina, where business analysis meets data-driven innovation to turn complexity into clarity"
         />
       </Head>
       <TransitionEffect />
@@ -45,11 +45,11 @@ export default function Home() {
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." />
+              <AnimatedText text="Turning Complexity Into Clarity With Analytics And Innovation." />
               <Hometext />
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <MotionLink
-                  href="/Resume.pdf"
+                  href="/Rudrik's resume.pdf"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                   {...scaleMotion}

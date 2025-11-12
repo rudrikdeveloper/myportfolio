@@ -26,20 +26,21 @@ const Skills = () => {
            bg-dark text-light p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light lg:p-6 md:p-4 xs:text-xs xs:p-2"
           whileHover={{ scale: 1.05 }}
         >
-          Web
+          All
         </motion.div>
 
-        <Skill name="HTML" x="-25vw" y="2vw" />
-        <Skill name="CSS" x="-5vw" y="-10vw" />
-        <Skill name="JavaScript" x="20vw" y="6vw" />
-        <Skill name="ReactJS" x="0vw" y="12vw" />
-        <Skill name="NextJS" x="-20vw" y="-15vw" />
-        <Skill name="CoreJava" x="15vw" y="-12vw" />
-        <Skill name="WebDesign" x="32vw" y="-5vw" />
-        <Skill name="GitHub" x="-32vw" y="-5vw" />
-        <Skill name="Figma" x="10vw" y="-22vw" />
-        <Skill name="Tailwind CSS" x="18vw" y="18vw" />
-        <Skill name="AdvanceJava" x="-25vw" y="18vw" />
+        <Skill name="Power BI" x="-25vw" y="2vw" />
+        <Skill name="SQL" x="-5vw" y="-10vw" />
+        <Skill name="Advanced Excel" x="20vw" y="6vw" />
+        <Skill name="Python" x="0vw" y="12vw" />
+        <Skill name="Microsoft Fabric" x="-20vw" y="-15vw" />
+        <Skill name="Data Analysis" x="15vw" y="-12vw" />
+        <Skill name="Dashboard Design" x="32vw" y="-5vw" />
+        <Skill name="Html" x="-32vw" y="-5vw" />
+        <Skill name="Css" x="10vw" y="-22vw" />
+        <Skill name="Data Modeling" x="18vw" y="18vw" />
+        <Skill name="KPI Tracking" x="-25vw" y="18vw" />
+
       </div>
     </>
   );

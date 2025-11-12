@@ -53,7 +53,16 @@ const Experience = () => {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[18px]"
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 text-justify">
+          <Details
+            position="Business Intelligence Intern"
+            company="Central Electronics Limited, Govt. of India"
+            time="Jun-25 - Jul-25"
+            address="Ghaziabad, Uttar Pradesh"
+            companyLink="https://www.celindia.co.in/"
+            work="Responsibilities involved collecting, cleaning, and structuring HRIS datasets covering recruitment, employee engagement, and retention metrics. Designed and developed interactive dashboards in Power BI and Excel to visualize key KPI&apos;s including attrition trends and performance metrics. Leveraged Power BI, Excel (Pivot Tables, Vlookup, Power Query), and data transformation techniques for comprehensive data extraction, analysis, and reporting. Successfully delivered actionable insights to support organizational decision-making and HR analytics initiatives."
+          />
+
           <Details
             position="Customer Service Associate - L2"
             company="Magnum"
@@ -63,7 +72,7 @@ const Experience = () => {
             work="Responsibilities included handling inbound and outbound customer calls, resolving customer queries and complaints, providing information about products and services, maintaining customer records, achieving call center targets, and ensuring high levels of customer satisfaction."
           />
           <Details
-            position="Voice Process Associate - L1"
+            position="Health Consultant - L1"
             company="eNoah"
             time="Jun-2020 - April-2021"
             address="Indore, India"
