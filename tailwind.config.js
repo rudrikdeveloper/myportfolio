@@ -13,6 +13,7 @@ module.exports = {
         primary: "#B63E96",
         primaryDark: "#58E6D9",
         red: "#D41343",
+        border: "var(--border)",
       },
       backgroundImage: {
         circularLight:

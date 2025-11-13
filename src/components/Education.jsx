@@ -2,12 +2,12 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info, workClassName }) => {
   const ref = useRef(null);
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mt-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+      className="my-8 first:mt-0 last:mt-0 w-[80%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -21,7 +21,7 @@ const Details = ({ type, time, place, info }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {place}
         </span>
-        <p className="font-medium w-full md:text-sm">{info}</p>
+        <p className={`font-medium w-full md:text-sm ${workClassName || ""}`}>{info}</p>
       </motion.div>
     </li>
   );
@@ -46,24 +46,27 @@ const Education = () => {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[18px]"
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 text-justify">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             type="Post Graduate Diploma in Management"
             time="2024-2026"
             place="Jaipuria School of Business, Ghaziabad"
-            info="The program focuses on developing managerial skills, leadership qualities, and strategic thinking through a blend of academic learning and practical exposure. Courses cover areas such as finance, marketing, operations, and human resources."
+            info="The program focuses on developing managerial skills, leadership qualities, and strategic thinking through a blend of academic learning and practical exposure. Specialized courses cover areas such as Finance, Marketing, Operations, Human Resources, Business Analytics, Strategic Management, and Organizational Behavior. Completed projects include data analytics initiatives, HR strategy development, and market research analysis using tools like Power BI, Excel, and statistical analysis software. Demonstrated expertise in business intelligence, data-driven decision making, and management consulting methodologies."
+            workClassName="text-justify"
           />
           <Details
-            type="master of technology in nanoTechnology"
+            type="Master of Technology in Nanotechnology"
             time="2018-2020"
-            place="School Of nanotechnology, UTD, RGPV, BHOPAL"
-            info="Relevant courses included Nanomaterials, Nanoelectronics, Nanophotonics, Nanoscale Characterization Techniques, Nanofabrication, Quantum Mechanics, and Nanobiotechnology."
+            place="School of Nanotechnology, UTD, RGPV, Bhopal"
+            info="Rigorous postgraduate program focusing on advanced nanotechnology research and applications. Relevant courses included Nanomaterials, Nanoelectronics, Nanophotonics, Nanoscale Characterization Techniques, Nanofabrication, Quantum Mechanics, Nanobiotechnology, and Advanced Materials Science. Completed thesis on nanomaterial synthesis and characterization. Gained hands-on experience with electron microscopy, X-ray diffraction, and other advanced analytical techniques. Developed strong research skills in experimental design, data analysis, and technical documentation."
+            workClassName="text-justify"
           />
           <Details
-            type="Bachelor Of engineering In mechanical"
+            type="Bachelor of Engineering in Mechanical"
             time="2014-2018"
-            place="IES College Of Technology, RGPV, BHOPAL"
-            info="Relevant courses included Thermodynamics, Fluid Mechanics, Heat and Mass Transfer, Mechanics of Materials, Machine Design, Manufacturing Processes, and Engineering Materials."
+            place="IES College of Technology, RGPV, Bhopal"
+            info="Comprehensive undergraduate program in mechanical engineering covering core principles and applications. Relevant courses included Thermodynamics, Fluid Mechanics, Heat and Mass Transfer, Mechanics of Materials, Machine Design, Manufacturing Processes, Engineering Materials, CAD/CAM, and Industrial Engineering. Completed capstone projects involving mechanical design, simulation, and optimization. Acquired proficiency in design software including AutoCAD, CATIA, and ANSYS. Developed strong analytical, problem-solving, and project management skills through laboratory work and practical applications."
+            workClassName="text-justify"
           />
         </ul>
       </div>

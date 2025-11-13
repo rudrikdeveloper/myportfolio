@@ -2,12 +2,12 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, companyLink, time, address, work, workClassName }) => {
   const ref = useRef(null);
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+      className="my-8 first:mt-0 last:mb-0 w-[80%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -28,7 +28,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full md:text-sm">{work}</p>
+        <p className={`font-medium w-full md:text-sm ${workClassName || ""}`}>{work}</p>
       </motion.div>
     </li>
   );
@@ -53,14 +53,15 @@ const Experience = () => {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[18px]"
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 text-justify">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             position="Business Intelligence Intern"
             company="Central Electronics Limited, Govt. of India"
             time="Jun-25 - Jul-25"
             address="Ghaziabad, Uttar Pradesh"
             companyLink="https://www.celindia.co.in/"
-            work="Responsibilities involved collecting, cleaning, and structuring HRIS datasets covering recruitment, employee engagement, and retention metrics. Designed and developed interactive dashboards in Power BI and Excel to visualize key KPI&apos;s including attrition trends and performance metrics. Leveraged Power BI, Excel (Pivot Tables, Vlookup, Power Query), and data transformation techniques for comprehensive data extraction, analysis, and reporting. Successfully delivered actionable insights to support organizational decision-making and HR analytics initiatives."
+            work="Responsibilities involved collecting, cleaning, and structuring HRIS datasets covering recruitment, employee engagement, and retention metrics. Designed and developed interactive dashboards in Power BI and Excel to visualize key KPI's including attrition trends and performance metrics. Leveraged Power BI, Excel (Pivot Tables, Vlookup, Power Query), and data transformation techniques for comprehensive data extraction, analysis, and reporting. Successfully delivered actionable insights to support organizational decision-making and HR analytics initiatives."
+            workClassName="text-justify"
           />
 
           <Details
@@ -70,6 +71,7 @@ const Experience = () => {
             address="Bhopal, India"
             companyLink="https://www.magnumgroup.co.in/"
             work="Responsibilities included handling inbound and outbound customer calls, resolving customer queries and complaints, providing information about products and services, maintaining customer records, achieving call center targets, and ensuring high levels of customer satisfaction."
+            workClassName="text-justify"
           />
           <Details
             position="Health Consultant - L1"
@@ -78,6 +80,7 @@ const Experience = () => {
             address="Indore, India"
             companyLink="https://enoahisolution.com/"
             work="Responsibilities involved managing a high volume of outbound and inbound calls to hospitals across multiple U.S. time zones, supporting insurance companies in obtaining medical documentation, negotiating costs effectively, and ensuring smooth payment processing. Addressed concerns related to medical records and physician statements while adhering to HIPAA guidelines. Consistently met performance objectives and upheld strong customer service standards."
+          workClassName="text-justify"
           />
         </ul>
       </div>
